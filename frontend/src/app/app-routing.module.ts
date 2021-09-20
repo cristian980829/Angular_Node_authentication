@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
+//Components
 import { TasksComponent } from './components/tasks/tasks.component';
 import { PrivateTasksComponent } from './components/private-tasks/private-tasks.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { SignupComponent } from './components/signup/signup.component';
-
-//Components
+import { AuthGuard } from './components/shared/auth.guard';
 
 
 const routes: Routes = [
@@ -20,7 +21,8 @@ const routes: Routes = [
   },
   {
     path: 'private',
-    component: PrivateTasksComponent
+    component: PrivateTasksComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'signin',

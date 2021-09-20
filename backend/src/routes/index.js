@@ -31,19 +31,19 @@ router.get('/tasks', (req, res) => {
         {
             _id: '1',
             name: "task one",
-            description: 'asdadasd',
+            description: 'breakfast: 12:00 pm',
             date: "2019-11-06T15:50:18.921Z"
         },
         {
             _id: '2',
             name: "task two",
-            description: 'asdadasd',
+            description: 'school: 2:00 pm',
             date: "2019-11-06T15:50:18.921Z"
         },
         {
             _id: '3',
             name: "task three",
-            description: 'asdadasd',
+            description: 'take a shower: 11:00',
             date: "2019-11-06T15:50:18.921Z"
         },
     ])
@@ -54,19 +54,19 @@ router.get('/private-tasks', verifyToken, (req, res) => {
         {
             _id: '1',
             name: "task one",
-            description: 'asdadasd',
+            description: 'go to the school',
             date: "2019-11-06T15:50:18.921Z"
         },
         {
             _id: '2',
             name: "task two",
-            description: 'asdadasd',
+            description: 'go to university',
             date: "2019-11-06T15:50:18.921Z"
         },
         {
             _id: '3',
             name: "task three",
-            description: 'asdadasd',
+            description: 'study english',
             date: "2019-11-06T15:50:18.921Z"
         },
     ])
