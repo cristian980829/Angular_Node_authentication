@@ -14,10 +14,9 @@
                                 <input name="password" type="password" [(ngModel)]="user.password" class="form-control"
                                     placeholder="Contraseña" required>
                             </div>
-                            <button type="submit" class="btn btn-primary mb-2 btn-block">
-                                <i class="fas fa-sign-in-alt"></i> SignIn
-                            </button>
-
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary mt-3" type="submit">SignIn</button>
+                            </div>
                             <div class="form-group mt-3">
                                 <a routerLink="/signup">¿No tienes una cuenta?</a>
                             </div>
